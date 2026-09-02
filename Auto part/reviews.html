@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parts Reviews — Honest Ride Parts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg-deep:#1B1F22; --bg-panel:#23282B; --steel:#3E4C59;
+    --accent:#E8590C; --accent-dim:#B8480C; --paper:#F4EFE6;
+    --ink:#1B1F22; --muted:#8A9199; --line:#333B40;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--bg-deep);font-family:'IBM Plex Sans',sans-serif;color:var(--paper);font-size:16px;}
+  .wrap{max-width:760px;margin:0 auto;padding:0 20px 48px;}
+
+  header{padding:32px 16px 22px;text-align:center;border-bottom:2px solid var(--accent);}
+  .brand-row{display:flex;align-items:center;justify-content:center;gap:12px;}
+  .brand-row .car-icon{width:38px;height:38px;color:var(--accent);flex-shrink:0;}
+  header h1{font-family:'Oswald',sans-serif;font-size:42px;font-weight:700;letter-spacing:0.5px;margin:0;}
+  header h1 span{color:var(--accent);}
+  header p{margin:8px 0 0;font-size:15.5px;color:var(--muted);letter-spacing:0.3px;}
+
+  .site-nav{display:flex;justify-content:center;flex-wrap:wrap;gap:22px;margin-top:16px;}
+  .site-nav a{font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:0.6px;text-transform:uppercase;color:var(--paper);text-decoration:none;padding-bottom:4px;border-bottom:2px solid transparent;}
+  .site-nav a:hover, .site-nav a:focus-visible{color:var(--accent);border-bottom-color:var(--accent);}
+  .site-nav .nav-current{font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:0.6px;text-transform:uppercase;color:var(--accent);padding-bottom:4px;border-bottom:2px solid var(--accent);}
+
+  section{margin-top:30px;}
+  .section-label{font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:1px;color:var(--accent);margin:0 0 6px;}
+  .section-intro{font-size:14.5px;color:var(--muted);margin:0 0 18px;line-height:1.5;}
+
+  .review-card{
+    background:var(--bg-panel);
+    border:1px solid var(--line);
+    border-radius:6px;
+    padding:18px 18px 20px;
+    margin-bottom:16px;
+  }
+  .review-top{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;}
+  .review-top h2{font-family:'Oswald',sans-serif;font-size:19px;margin:0;}
+  .review-tag{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.4px;color:var(--accent-dim);background:rgba(232,89,12,0.12);padding:3px 8px;border-radius:3px;white-space:nowrap;}
+  .stars{color:var(--accent);font-size:15px;letter-spacing:2px;margin:8px 0 10px;}
+  .stars .dim{color:var(--line);}
+  .review-body{font-size:14.5px;line-height:1.6;color:var(--paper);margin:0 0 12px;}
+  .verdict{
+    font-size:13.5px;
+    border-top:1px dashed var(--line);
+    padding-top:10px;
+    color:var(--muted);
+  }
+  .verdict strong{color:var(--paper);}
+
+  footer{text-align:center;font-size:13px;color:var(--muted);margin-top:36px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="brand-row">
+      <svg class="car-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 13l1.6-4.8A2 2 0 0 1 6.5 7h11a2 2 0 0 1 1.9 1.2L21 13"></path>
+        <path d="M3 13h18v4a1 1 0 0 1-1 1h-1.5a1 1 0 0 1-1-1v-1h-11v1a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-4z"></path>
+        <circle cx="7" cy="17.5" r="1.5"></circle>
+        <circle cx="17" cy="17.5" r="1.5"></circle>
+      </svg>
+      <h1>HONEST RIDE <span>PARTS</span></h1>
+    </div>
+    <p>Real parts. Real diagnosis. No upsell, ever.</p>
+    <nav class="site-nav">
+      <a href="honest-ride-auto-parts.html">Home</a>
+      <span class="nav-current">Parts Reviews</span>
+      <a href="guides.html">DIY Guides</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <section>
+    <p class="section-label">PARTS REVIEWS</p>
+    <p class="section-intro">Straight opinions on the parts people actually ask us about — what held up, what didn't, and what we'd buy again. No sponsored placements.</p>
+
+    <div class="review-card">
+      <div class="review-top">
+        <h2>Ceramic Brake Pads</h2>
+        <span class="review-tag">BRAKES</span>
+      </div>
+      <div class="stars">★★★★<span class="dim">★</span></div>
+      <p class="review-body">Quiet, low dust, and they bite predictably from cold. Not the cheapest option on the shelf, but they don't glaze as fast as the budget semi-metallics we've tried, and your wheels stay cleaner between washes.</p>
+      <div class="verdict"><strong>Good for:</strong> daily commuters, people tired of black dust on their rims.</div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-top">
+        <h2>Standard Oil Filter</h2>
+        <span class="review-tag">ENGINE</span>
+      </div>
+      <div class="stars">★★★<span class="dim">★★</span></div>
+      <p class="review-body">Does the job for a normal oil change interval, but the housing is thinner than the OEM part — fine if you're not overtightening it by hand at every change. We wouldn't stretch this one past the interval on the box.</p>
+      <div class="verdict"><strong>Good for:</strong> routine changes on a budget. Skip it if you're doing extended intervals.</div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-top">
+        <h2>AGM Battery</h2>
+        <span class="review-tag">ELECTRICAL</span>
+      </div>
+      <div class="stars">★★★★★</div>
+      <p class="review-body">Cranked strong through a cold snap that killed a cheaper flooded battery in the same lot. Costs more up front, but if your car sits outside or you run a lot of accessories, it's worth the difference.</p>
+      <div class="verdict"><strong>Good for:</strong> cold climates, cars with a lot of electronics, anyone who's been stranded once already.</div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-top">
+        <h2>All-Season Touring Tires</h2>
+        <span class="review-tag">TIRES</span>
+      </div>
+      <div class="stars">★★★★<span class="dim">★</span></div>
+      <p class="review-body">Quiet on the highway and predictable in light rain and snow. They're not a substitute for real winter tires if you're somewhere that gets serious snow, but for most daily driving they're a solid all-rounder that wears evenly.</p>
+      <div class="verdict"><strong>Good for:</strong> daily commuters in mixed climates. Skip if you get heavy snow — get dedicated winters instead.</div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-top">
+        <h2>LED Headlight Bulbs</h2>
+        <span class="review-tag">LIGHTING</span>
+      </div>
+      <div class="stars">★★★<span class="dim">★★</span></div>
+      <p class="review-body">Noticeably brighter and whiter than the halogens they replaced, but fit varies a lot by vehicle — some housings need an adapter, and a few owners reported flickering until they grounded the wiring properly. Worth it once installed right.</p>
+      <div class="verdict"><strong>Good for:</strong> anyone tired of dim factory halogens. Check your specific bulb housing before buying.</div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-top">
+        <h2>Full-Synthetic Motor Oil</h2>
+        <span class="review-tag">FLUIDS</span>
+      </div>
+      <div class="stars">★★★★★</div>
+      <p class="review-body">Costs more per change than conventional oil, but it holds up better under heat and lets you stretch the interval if your manual allows it — which usually evens out the price difference over a year of driving.</p>
+      <div class="verdict"><strong>Good for:</strong> newer engines, hot climates, anyone doing highway miles. Overkill for a car you're about to sell.</div>
+    </div>
+  </section>
+
+  <footer>Honest Ride Parts — real parts, real answers.</footer>
+</div>
+</body>
+</html>
